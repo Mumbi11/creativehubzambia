@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Creative Hub Zambia</title>
+    <!-- Add your CSS styles here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about_us/index.html">About Us</a></li>
+            <li><a href="../our_services/index.html">Services</a></li>
+            <li><a href="order_procedure/index.html">Order Procedure</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+			<li><a href="../publications/index.html">publications</a></li>
+            <li><a href="../contact_us/index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>Order Form</h1>
+</header>
+
+<main>
+    <form name="orderForm" action="submit_order.php" method="post" onsubmit="return validateForm()">
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <optgroup label="Academic Services">
+                <option value="Academic Essay Writing">Academic Essay Writing</option>
+                <option value="Term Papers">Term Papers</option>
+                <option value="Dissertations and Theses">Dissertations and Theses</option>
+                <option value="Research Proposals">Research Proposals</option>
+                <option value="Research Reports">Research Reports</option>
+                <option value="Proofreading and Editing">Proofreading and Editing</option>
+                <option value="Career Guidance and Mentorship">Career Guidance and Mentorship</option>
+            </optgroup>
+            <optgroup label="Professional Services">
+                <option value="Constitutional Framing">Constitutional Framing</option>
+                <option value="Business Plan/Proposal Writing">Business Plan/Proposal Writing</option>
+                <option value="Business Model Canvas">Business Model Canvas</option>
+                <option value="Manifestos">Manifestos</option>
+                <option value="Project Planning">Project Planning</option>
+                <option value="Transcriptions">Transcriptions</option>
+                <option value="Resume Writing">Resume Writing</option>
+                <option value="Email Outreach Services">Email Outreach Services</option>
+                <option value="Memo Writing">Memo Writing</option>
+                <option value="Proofreading and Editing (Professional)">Proofreading and Editing (Professional)</option>
+            </optgroup>
+            <optgroup label="Creative Design Services">
+                <option value="Logo Design">Logo Design</option>
+                <option value="Flyer Design">Flyer Design</option>
+                <option value="Business Card Design">Business Card Design</option>
+                <option value="Poster Design">Poster Design</option>
+                <option value="Label Design">Label Design</option>
+                <option value="Gift Certificate Design">Gift Certificate Design</option>
+                <option value="Email Header Design">Email Header Design</option>
+                <option value="Circle Sticker Design">Circle Sticker Design</option>
+                <option value="Banner Design">Banner Design</option>
+                <option value="Ticket Design">Ticket Design</option>
+                <option value="Coupon Design">Coupon Design</option>
+                <option value="Invoice Design">Invoice Design</option>
+                <option value="Calendar Design">Calendar Design</option>
+                <option value="Book and Magazine Cover Design">Book and Magazine Cover Design</option>
+            </optgroup>
+            <optgroup label="Creative Writing Services">
+                <option value="Writing Services in Poetry">Writing Services in Poetry</option>
+                <option value="Speech Writing">Speech Writing</option>
+                <option value="Movie and Television Script Writing">Movie and Television Script Writing</option>
+                <option value="Novel and Short Story Writing">Novel and Short Story Writing</option>
+                <option value="Signwriting">Signwriting</option>
+                <option value="Playwriting">Playwriting</option>
+                <option value="Memoir Writing">Memoir Writing</option>
+                <option value="Personal Essay and Autobiography Writing">Personal Essay and Autobiography Writing</option>
+                <option value="Proofreading and Editing (Creative)">Proofreading and Editing (Creative)</option>
+            </optgroup>
+            <optgroup label="Virtual Assistance Services">
+                <option value="Administrative Support">Administrative Support</option>
+                <option value="Content Creation">Content Creation</option>
+                <option value="Email Management">Email Management</option>
+                <option value="Data Entry">Data Entry</option>
+                <option value="Social Media Posts and Ads">Social Media Posts and Ads</option>
+                <option value="Product and Service Descriptions">Product and Service Descriptions</option>
+                <option value="Proofreading and Editing (Virtual Assistance)">Proofreading and Editing (Virtual Assistance)</option>
+            </optgroup>
+            <optgroup label="Consultation and Mentorship Services">
+                <option value="Career Guidance and Mentorship">Career Guidance and Mentorship</option>
+                <option value="Professional Consultation and Mentorship">Professional Consultation and Mentorship</option>
+                <option value="Creative Consultation and Mentorship">Creative Consultation and Mentorship</option>
+            </optgroup>
+        </select>
+
+        <label for="projectDetails">Project Details:</label>
+        <textarea id="projectDetails" name="projectDetails" rows="4" cols="50" required></textarea>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Creative Hub Zambia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
